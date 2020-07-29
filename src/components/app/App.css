@@ -1,0 +1,5 @@
+ul, ol, li, h4, h1, h2, h3 {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
