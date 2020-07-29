@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Rocket chat
+
+In the project i used React Hooks and Styled Components.
+
+You can see this project here: [Rocketchat](https://rocketchat-78b2c.web.app/)
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
