@@ -47,25 +47,19 @@ export const Ul = styled.ul`
     `
 export const Li = styled.li`
      font-size: 20px;
-     border: 1px #00b9ffa6 solid;
      border-radius: 5px;
      margin-right: 4px;
-     
-     :focus-within {
-      border: 2px blue solid;
-     }
+     border: ${props =>
+     props.active ? '2px blue solid': '1px #00b9ffa6 solid'};
     `
 
 export const A = styled.a`
      text-decoration: none;
      padding: 0 5px;
      
-     :visited {
-      color: black;
-     }
-
-     :focus-within {
-      color: blue;
-      font-weight: bold;
-     }
+     color: ${props =>
+     props.active ? 'blue': 'black'};
+     
+     font-weight: ${props =>
+     props.active ? 'bold': 'normal'};
     `

@@ -34,7 +34,8 @@ function App() {
     const indexOfFirstPost = indexOfLastPost - postsPerPage
     const currentPosts = visiblePosts.slice(indexOfFirstPost, indexOfLastPost)
 
-    const paginate = pageNumber => setCurrentPage(pageNumber)
+    const paginate = (pageNumber)=> setCurrentPage(pageNumber)
+
 
     const onSearch = (term) => {
         if (term.length === 0) {
@@ -66,6 +67,7 @@ function App() {
                 postsPerPage={postsPerPage}
                 totalPosts={visiblePosts.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </Container>
     );

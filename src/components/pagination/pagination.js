@@ -1,6 +1,6 @@
 import React from 'react'
 import {Ul, Li, A} from '../../styled/styled'
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+const Pagination = ({ postsPerPage, totalPosts, paginate,currentPage }) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
@@ -11,8 +11,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     <nav>
       <Ul>
         {pageNumbers.map(number =>
-          <Li key={number}>
-            <A onClick={() => paginate(number)} href='#'>
+          <Li key={number}  active={number === currentPage}>
+            <A onClick={() => paginate(number)} href='#' active={number === currentPage}>
                {number}
             </A>
           </Li>)
